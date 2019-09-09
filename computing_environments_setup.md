@@ -30,7 +30,7 @@ If you don't already have it installed, please make sure to install Windows Subs
 
 Once you have this installed, open a Bash terminal window. 
 
-Note: when you open a new Bash environment, it will not automatically place you in your Windows system C:\ drive - instead, it places you in your UNIX account's home directory within the Linux subsystem's file system. In order to access your C:\ drive and all the files there, you have to navigate to the C: drive first, by running the following command:
+Note: when you open a new Bash environment, it will not automatically place you in your Windows system C:\ drive - instead, it places you in your UNIX account's home directory within the Linux subsystem's file system. In order to access your C:\ drive and all the files there, you have to navigate to the C:\ drive first, by running the following command:
 ``` bash
 cd /mnt/c
 ```
@@ -80,6 +80,5 @@ More information [here](https://github.com/takluyver/bash_kernel).
 
 ### R
 R already comes with its own graphical interface; however, it can also be useful to integrate R with Anaconda. You can find instructions on how to that [here](https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/.) Start from **Creating an environment with R**. Once you do this, you can also install a kernel to use R with Jupyter notebooks. Instructions for doing so can be found [here](https://irkernel.github.io/installation/).
-
 
 
