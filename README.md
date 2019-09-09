@@ -1,1 +1,3 @@
-# bisb_bootcamp_19
+# BiSB Bootcamp 2019
+
+Welcome to BiSB! Here you will find resources for Bootcamp (and beyond)!
