@@ -2,19 +2,19 @@
 
 Making sure our computing environments are up and running is essential to ensuring to optimizing your workflow! Here, I'll go over some essentials. 
 
-I. [Installing Anaconda](https://github.com/zrcjessica/bisb_bootcamp_19/blob/master/computing_environments_setup.md#installing-anaconda)
-	a. [MacOS](https://github.com/zrcjessica/bisb_bootcamp_19/blob/master/computing_environments_setup.md#macos)
-	b. [Windows](https://github.com/zrcjessica/bisb_bootcamp_19/blob/master/computing_environments_setup.md#windows)
-	c. [Verify Installation](https://github.com/zrcjessica/bisb_bootcamp_19/blob/master/computing_environments_setup.md#verify-installation)
-	d. [Uninstalling Anaconda](https://github.com/zrcjessica/bisb_bootcamp_19/blob/master/computing_environments_setup.md#uninstalling-anaconda)
-II. [Jupyter Notebooks](https://github.com/zrcjessica/bisb_bootcamp_19/blob/master/computing_environments_setup.md#jupyter-notebooks)
-	a. [Bash](https://github.com/zrcjessica/bisb_bootcamp_19/blob/master/computing_environments_setup.md#bash)
-	b. [R](https://github.com/zrcjessica/bisb_bootcamp_19/blob/master/computing_environments_setup.md#r)
+* [Installing Anaconda](https://github.com/zrcjessica/bisb_bootcamp_19/blob/master/computing_environments_setup.md#installing-anaconda)
+	* [MacOS](https://github.com/zrcjessica/bisb_bootcamp_19/blob/master/computing_environments_setup.md#macos)
+	* [Windows](https://github.com/zrcjessica/bisb_bootcamp_19/blob/master/computing_environments_setup.md#windows)
+	* [Verify Installation](https://github.com/zrcjessica/bisb_bootcamp_19/blob/master/computing_environments_setup.md#verify-installation)
+	* [Uninstalling Anaconda](https://github.com/zrcjessica/bisb_bootcamp_19/blob/master/computing_environments_setup.md#uninstalling-anaconda)
+* [Jupyter Notebooks](https://github.com/zrcjessica/bisb_bootcamp_19/blob/master/computing_environments_setup.md#jupyter-notebooks)
+	* [Bash](https://github.com/zrcjessica/bisb_bootcamp_19/blob/master/computing_environments_setup.md#bash)
+	* [R](https://github.com/zrcjessica/bisb_bootcamp_19/blob/master/computing_environments_setup.md#r)
 
-## I. Installing Anaconda
+## Installing Anaconda
 Anaconda is a popular distribution for Python and R, and widely used in many fields of scientific computing. Here, you can find instructions for installing Anaconda on your computer. 
 
-### a. MacOS
+### MacOS
 Below are instructions for installing Anaconda for the command line on your Mac. They are essentially a summary of the instructions for the command-line install on the [official Anaconda docs](https://docs.anaconda.com/anaconda/install/mac-os/), so you can always refer to that link. Do NOT follow instructions for the graphical install! 
 
 1. Download the **64-Bit Command Line Installer** for macOS [here](https://www.anaconda.com/distribution/#linux) for your desired Python version (personally, I use Python 3). You can click the link to automatically download the installer to your default downloads directory (`~/Downloads`) or right click on the installer link, copy the link address, and run `wget <link address>` in the Terminal your desired download directory to download the installer. 
@@ -35,7 +35,7 @@ Make sure to use the full path to the installer file - it may not be exactly the
 
 7. Close and reopen your Terminal window for the Anaconda installation to take effect. Alternatively, run the command: `source ~/.bashrc`.
 
-### b. Windows
+### Windows
 
 If you don't already have it installed, please make sure to install Windows Subsystem Linux. Instructions can be found [here](https://docs.microsoft.com/en-us/windows/wsl/install-win10). 
 
@@ -66,22 +66,22 @@ Make sure to use the full path to the installer file - it may not be exactly the
 
 7. Close and reopen your Terminal window for the Anaconda installation to take effect. Alternatively, run the command: `source ~/.bashrc`.
 
-### c. Verify Installation
+### Verify Installation
 Regardless of your OS, open your terminal window and use one of the following methods to verify your installation:
 - Run the command `conda list`. If Anaconda is properly installed, this will display of list of installed packages and their versions.
 - Run the python shell with the command `python`. If Anaconda is properly installed, the version information it displays on start up will include "Anaconda". To exit the python shell, run the command `quit()`, or `Ctrl+D`. 
 
-### d. Uninstalling Anaconda
+### Uninstalling Anaconda
 At some point in your life, Anaconda will probably break. When that happens, simply uninstall and reinstall Anaconda. [Here](https://docs.anaconda.com/anaconda/install/uninstall/) are instructions for uninstalling Anaconda properly. 
 
-## II. Jupyter Notebooks
+## Jupyter Notebooks
 [Jupyter notebooks](https://jupyter.org/) are a useful web-app that allows you to do interactive computing in a number of different programming languages in your browser. It is very useful for data analysis, as it allows you to visualize your data as you go. They should be automatically installed along with Anaconda. You can try running it with the following command:
 ```bash
 jupyter notebook
 ```
 If you have a Mac, this command should automatically launch a new window or tab that displays all your folders and files in the directory from which you launched the command, and give you options to create new Jupyter notebooks or edit existing ones. By default, you should be able to Jupyter notebooks with the Python programming language. However, it might also be useful for you to install kernels for working in other languages. 
 
-### a. Bash
+### Bash
 Bash is the command language for working with the Unix shell. You can install a kernel that allows you to run Jupyter notebooks with Bash. To install, open your terminal and run the following commands:
 ```bash
 pip install bash_kernel
@@ -89,7 +89,7 @@ python -m bash_kernel.install
 ```
 More information [here](https://github.com/takluyver/bash_kernel).
 
-### b. R
+### R
 R already comes with its own graphical interface; however, it can also be useful to integrate R with Anaconda. You can find instructions on how to that [here](https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/.) Start from **Creating an environment with R**. Once you do this, you can also install a kernel to use R with Jupyter notebooks. Instructions for doing so can be found [here](https://irkernel.github.io/installation/).
 
 
