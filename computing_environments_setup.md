@@ -45,7 +45,10 @@ Note: when you open a new Bash environment, it will not automatically place you 
 ``` bash
 cd /mnt/c
 ```
-
+WSL has access to your Windows filesystem. It's a good idea to create symlinks to your most-used Windows directories:
+``` bash
+ln -s /mnt/c/Users/ochapman/Documents $HOME/Documents
+```
 Below are instructions for installing Anaconda for the command line on your PC. They are essentially a summary of the instructions for the installation on the [official Anaconda docs](https://docs.anaconda.com/anaconda/install/linux/), so you can always refer to that link. 
 
 1. Download the **64-Bit (x86) Linux Installer** for your desired Python version [here](https://www.anaconda.com/distribution/#linux). Even though you have a PC, don't download the Windows installer - you will be working in the command line, which runs on Linux. You can click the link to automatically download the installer to your default downloads directory (`~/Downloads`) or right click on the installer link, copy the link address, and run `wget <link address>` in the Terminal your desired download directory to download the installer. 
@@ -94,6 +97,6 @@ python -m bash_kernel.install
 More information [here](https://github.com/takluyver/bash_kernel).
 
 ### R
-R already comes with its own graphical interface; however, it can also be useful to integrate R with Anaconda. You can find instructions on how to that [here](https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/.) Start from **Creating an environment with R**. Once you do this, you can also install a kernel to use R with Jupyter notebooks. Instructions for doing so can be found [here](https://irkernel.github.io/installation/).
+R already comes with its own graphical interface; however, it can also be useful to integrate R with Anaconda. You can find instructions on how to that [here](https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/.) Start from **Creating an environment with R**. Once you do this, you can also install a kernel to use R with Jupyter notebooks. Instructions for doing so can be found [here](https://irkernel.github.io/installation/). **Do not install separate versions of R both within and outside conda, it will ruin your day.**
 
 
