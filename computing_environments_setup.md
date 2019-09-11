@@ -17,13 +17,13 @@ Anaconda is a popular distribution for Python and R, and widely used in many fie
 ### MacOS
 Below are instructions for installing Anaconda for the command line on your Mac. They are essentially a summary of the instructions for the command-line install on the [official Anaconda docs](https://docs.anaconda.com/anaconda/install/mac-os/), so you can always refer to that link. Do NOT follow instructions for the graphical install! 
 
-1. Download the **64-Bit Command Line Installer** for macOS [here](https://www.anaconda.com/distribution/#linux) for your desired Python version (personally, I use Python 3). You can click the link to automatically download the installer to your default downloads directory (`~/Downloads`) or right click on the installer link, copy the link address, and run `wget <link address>` in the Terminal your desired download directory to download the installer. 
+1. Download the **64-Bit Command Line Installer** for macOS [here](https://www.anaconda.com/distribution/#linux) for your desired Python version (personally, I use Python 3). You can click the link to automatically download the installer to your default downloads directory (`~/Downloads`) or right click on the installer link, copy the link address, and run `wget <paste copied link address>` in the Terminal in your desired download directory to download the installer. 
 
-2. Install Anaconda: in the Terminal, navigate to the directory where the installer was downloaded - it is probably in your default downloads directory: `~/Downloads/`. You should see a file whose name starts with `Anaconda3-` or `Anaconda2-`, depending on which Python version you chose to install, and which ends in the extension `.sh`. This is the Anaconda installer - it is a bash file, and contains Unix commands for installation. You need to run this file with something along the lines of the following command:
+2. In the Terminal, navigate to the directory where the installer was downloaded. You should see a file whose name starts with `Anaconda3-` or `Anaconda2-`, depending on which Python version you chose to install, and which ends in the extension `.sh`. This is the Anaconda installer - it is a Bash file, and contains Unix commands for installation. You need to run this file with something along the lines of the following command:
 ```bash
 bash ~/Downloads/Anaconda3-2019.07-MacOSX-x86_64.sh
 ```
-Make sure to use the full path to the installer file - it may not be exactly the same as what I've pasted here (especially if you installed Python 2).
+Make sure to use the full path to the installer file - it may not be exactly the same as what I've pasted here (e.g. if you installed Python 2 or downloaded it to a different directory).
 
 3. The installer will prompt you to review the license agreement, click `Enter` to view the license terms. Scroll to the bottom and enter `yes` to agree. 
 
@@ -79,7 +79,11 @@ At some point in your life, Anaconda will probably break. When that happens, sim
 ```bash
 jupyter notebook
 ```
-If you have a Mac, this command should automatically launch a new window or tab that displays all your folders and files in the directory from which you launched the command, and give you options to create new Jupyter notebooks or edit existing ones. By default, you should be able to Jupyter notebooks with the Python programming language. However, it might also be useful for you to install kernels for working in other languages. 
+If you have a Mac, this command should automatically launch a new window or tab that displays all your folders and files in the directory from which you launched the command, and give you options to create new Jupyter notebooks or edit existing ones. 
+
+If you have a PC, you will see a URL in your Terminal, which you should copy and paste into a new web browser window. This will launch Jupyter notebooks. 
+
+By default, you should be able to Jupyter notebooks with the Python programming language. However, it might also be useful for you to install kernels for working in other languages. 
 
 ### Bash
 Bash is the command language for working with the Unix shell. You can install a kernel that allows you to run Jupyter notebooks with Bash. To install, open your terminal and run the following commands:
