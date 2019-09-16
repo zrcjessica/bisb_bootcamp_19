@@ -94,6 +94,10 @@ Bash is the command language for working with the Unix shell. You can install a 
 pip install bash_kernel
 python -m bash_kernel.install
 ```
+or
+```
+conda install -c conda-forge bash_kernel
+```
 More information [here](https://github.com/takluyver/bash_kernel).
 
 ### R
