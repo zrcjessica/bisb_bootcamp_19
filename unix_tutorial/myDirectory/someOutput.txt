@@ -1,6 +1,0 @@
-GSE120861_all_deg_results.pilot.txt.gz
-exampleView.txt
-myLinks.txt*
-myLinks.txt.path@
-myNewFile.txt
-someOutput.txt
